@@ -1,8 +1,8 @@
 # -------------------------------------------------------
-# TECHNOGIX 
+# TECHNOGIX
 # -------------------------------------------------------
-# Copyright (c) [2021] Technogix.io
-# All rights reserved 
+# Copyright (c) [2022] Technogix SARL
+# All rights reserved
 # -------------------------------------------------------
 # Module to deploy an aws directory into a vpc
 # -------------------------------------------------------

@@ -1,8 +1,8 @@
 # -------------------------------------------------------
-# TECHNOGIX 
+# TECHNOGIX
 # -------------------------------------------------------
-# Copyright (c) [2021] Technogix.io
-# All rights reserved 
+# Copyright (c) [2022] Technogix SARL
+# All rights reserved
 # -------------------------------------------------------
 # Keywords to create data for module test
 # -------------------------------------------------------
@@ -24,7 +24,7 @@ from ipaddress import IPv4Network
 
 @keyword('Load Small AD Test Data')
 def load_small_ad_test_data(vpc, subnets, directory) :
-    
+
     result = {}
     result['directory'] = []
     result['directory'].append({})
@@ -46,8 +46,7 @@ def load_small_ad_test_data(vpc, subnets, directory) :
     result['directory'][0]['data']['VpcSettings']['SecurityGroupId'] = directory['security_group']
     result['directory'][0]['data']['VpcSettings']['AvailabilityZones'] = ['eu-west-1a', 'eu-west-1b']
     result['directory'][0]['data']['SsoEnabled'] = True
-    
+
     logger.debug(dumps(result))
 
     return result
-     

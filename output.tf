@@ -1,5 +1,5 @@
 # -------------------------------------------------------
-# Copyright (c) [2021] Technogix.io
+# Copyright (c) [2022] Technogix SARL
 # All rights reserved
 # -------------------------------------------------------
 # Module to deploy an aws directory into a vpc
@@ -19,7 +19,7 @@ output "security_group" {
 output "dns" {
     value = aws_directory_service_directory.directory.dns_ip_addresses
 }
-    
+
 output "url" {
     value = aws_directory_service_directory.directory.access_url
 }
