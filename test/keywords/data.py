@@ -24,7 +24,7 @@ from ipaddress import IPv4Network
 
 @keyword('Load Small AD Test Data')
 def load_small_ad_test_data(vpc, subnets, directory) :
-
+    
     result = {}
     result['directory'] = []
     result['directory'].append({})
