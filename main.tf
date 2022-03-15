@@ -1,7 +1,7 @@
 # -------------------------------------------------------
 # TECHNOGIX
 # -------------------------------------------------------
-# Copyright (c) [2021] Technogix.io
+# Copyright (c) [2022] Technogix SARL
 # All rights reserved
 # -------------------------------------------------------
 # Module to deploy an aws directory into a vpc
@@ -43,10 +43,10 @@ resource "aws_directory_service_directory" "directory" {
 # Configure directory logging if possible
 # -------------------------------------------------------
 resource "aws_cloudwatch_log_resource_policy" "policy" {
-	
+
 	count = (var.directory.type == "SimpleAD") ? 0 : 1
-    
-	policy_name     = "${var.project}-${var.environment}-${var.module}-directory-monitoring"
+
+  policy_name     = "${var.project}-${var.environment}-${var.module}-directory-monitoring"
     policy_document = jsonencode({
         Version     = "2012-10-17"
         Statement   = [
@@ -62,9 +62,9 @@ resource "aws_cloudwatch_log_resource_policy" "policy" {
 }
 
 resource "aws_directory_service_log_subscription" "directory" {
-    
-	count = (var.directory.type == "SimpleAD") ? 0 : 1
-    
+
+  count = (var.directory.type == "SimpleAD") ? 0 : 1
+
 	directory_id   = aws_directory_service_directory.directory.id
     log_group_name = var.logging.name
 }
