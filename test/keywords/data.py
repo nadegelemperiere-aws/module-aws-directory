@@ -1,7 +1,5 @@
 # -------------------------------------------------------
-# TECHNOGIX
-# -------------------------------------------------------
-# Copyright (c) [2022] Technogix SARL
+# Copyright (c) [2022] Nadege Lemperiere
 # All rights reserved
 # -------------------------------------------------------
 # Keywords to create data for module test
@@ -24,7 +22,7 @@ from ipaddress import IPv4Network
 
 @keyword('Load Small AD Test Data')
 def load_small_ad_test_data(vpc, subnets, directory) :
-    
+
     result = {}
     result['directory'] = []
     result['directory'].append({})
