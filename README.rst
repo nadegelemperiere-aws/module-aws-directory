@@ -2,7 +2,7 @@
    :alt: Logo
 
 ==========================
-Technogix directory module
+AWS directory terraform module
 ==========================
 
 About The Project
@@ -122,9 +122,9 @@ Tests can be executed in an environment :
 
 * in which python and terraform has been installed, by executing the script `scripts/robot.sh`_, or
 
-* in which docker is available, by using the `technogix infrastructure image`_ in its latest version, which already contains python and terraform, by executing the script `scripts/test.sh`_
+* in which docker is available, by using the `aws infrastructure image`_ in its latest version, which already contains python and terraform, by executing the script `scripts/test.sh`_
 
-.. _`technogix infrastructure image`: https://github.com/nadegelemperiere-docker/terraform-python-awscli
+.. _`aws infrastructure image`: https://github.com/nadegelemperiere-docker/terraform-python-awscli
 .. _`scripts/robot.sh`: scripts/robot.sh
 .. _`scripts/test.sh`: scripts/test.sh
 
@@ -184,11 +184,7 @@ This code is under MIT License.
 Contact
 =======
 
-Nadege LEMPERIERE - nadege.lemperiere@technogix.io
-
-Project Link: `https://github.com/nadegelemperiere-aws/module-aws-directory`_
-
-.. _`https://github.com/nadegelemperiere-aws/module-aws-directory`: https://github.com/nadegelemperiere-aws/module-aws-directory
+Nadege LEMPERIERE - nadege.lemperiere@gmail.com
 
 Acknowledgments
 ===============
